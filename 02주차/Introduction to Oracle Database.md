@@ -1,4 +1,4 @@
-## 2.1 Oracle Database 구조
+## 1. Oracle Database 구조
 
 <img width="744" height="416" alt="image" src="https://github.com/user-attachments/assets/9dedb641-4fea-43e6-9ceb-11390813f9ba" />
 
@@ -17,7 +17,7 @@
 
 ---
 
-## 2.2 Oracle Multitenant Container Database
+## 2. Oracle Multitenant Container Database
 
 Oracle 19c에서는 **Multitenant Architecture**를 사용할 수 있다.
 
@@ -85,7 +85,7 @@ CDB와 PDB를 관리하기 위한 Oracle의 공통 관리 정보를 가지고 �
 
 --- 
 
-## 2.4 확인 실습  Non-CDB의 Instance와 Database
+## 4. 확인 실습  Non-CDB의 Instance와 Database
 
 <br>
 
