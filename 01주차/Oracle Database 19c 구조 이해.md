@@ -3,11 +3,17 @@
 ### 1.1 Oracle Software, Instance, Database
 
 Oracle software(엔진) : Oracle Database.를 실행하고 관리하기 위해 설치한 Binary와 도구
+
 Instance : Database File을 관리하는 Memory 구조와 Process의 집합
+
 Database : Datafile, Control File, Online Redo Log 등 Persistent Storage에 존재하는 파일 집합
+
 Oracle Home : 특정 Release와 Patch 수준의 Oracle Software가 설치된 Directory
+
 Database Server : Oracle Software와 Database를 운영하는 Server 환경을 가리키는 넓은 표현
+
 Container : CDB 안에서 SQL이 실행되고 Metadata와 Data가 관리되는 논리적 경계
+
 User · Schema : User는 인증과 권한의 주체, Schema는 그 User가 소유한 Object의 집합
 
 ---
@@ -16,11 +22,11 @@ User · Schema : User는 인증과 권한의 주체, Schema는 그 User가 소�
 
 Oracle의 구조 = **Instance 영역**과 **Database 영역**
 
-### Instance 영역 = 메모리 영역
+Instance 영역 = 메모리 영역
 
-### Database 영역 = 데이터 저장 공간
+Database 영역 = 데이터 저장 공간
 
-### 처리 과정
+-> 처리 과정
 
 ```text
 Client가 SQL문 입력
