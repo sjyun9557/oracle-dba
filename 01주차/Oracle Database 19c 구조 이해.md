@@ -20,7 +20,7 @@ User · Schema : User는 인증과 권한의 주체, Schema는 그 User가 소�
 
 ### 1.2 Instance 영역과 Database 영역
 
-Oracle의 구조 = **Instance 영역(메모리 영역)** 과 **Database 영역(데이터 저장 공간)**
+Oracle의 구조 = **Instance 영역(메모리 영역)** + **Database 영역(데이터 저장 공간)**
 
 -> 처리 과정
 
@@ -47,7 +47,7 @@ Memory 사용    Database(Disk)에서
         Client에게 결과 반환
 ```
 
-필요한 Data Block이 **Instance 영역(Memory)** 에 있으면 바로 사용하고, 없다면 **Database 영역(Disk)**에서 읽어와 Instance 영역에서 처리한다.
+필요한 Data Block이 Instance 영역(Memory)에 있으면 바로 사용하고, 없다면 Database 영역(Disk)에서 읽어와 Instance 영역에서 처리한다.
 
 ---
 
@@ -60,6 +60,8 @@ Tempfile : Temporary Tablespace에 속하는 파일
 Control File : Database 이름, Datafile과 Redo Log의 위치, Checkpoint 정보 등 Database의 물리 구조를 기록하는 Binary File
 
 Online Redo Log	Database : 변경 기록을 보관
+
+---
 
 ### 1.4 여러 Database를 운영한다는 의미
 
@@ -82,9 +84,9 @@ Database가 여러 개라고 해서 Oracle Software를 Database 수만큼 설치
                       └─ Online Redo Logs
 ```
 
-** ORACLE_HOME과 ORACLE_SID
+** ORACLE_HOME과 ORACLE_SID 
 
-각 Database를 동시에 실행하려면 각각의 **Instance** 가 필요하기 때문에, 여러 Database를 운영할 때 다음 환경변수를 이용하여 작업 대상을 구분한다.
+각 Database를 동시에 실행하려면 각각의 Instance가 필요하기 때문에, 여러 Database를 운영할 때 다음 환경변수를 이용하여 작업 대상을 구분한다.
 
 - `ORACLE_HOME` : 사용할 **Oracle Software가 설치된 위치**
 - `ORACLE_SID` : 로컬에서 작업할 **Instance를 식별**
