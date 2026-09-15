@@ -80,3 +80,33 @@ CDB와 PDB를 관리하기 위한 Oracle의 공통 관리 정보를 가지고 �
 
 > PDB마다 별도의 Instance가 존재하는 것은 아니다.  
 > CDB의 여러 PDB가 Instance와 일부 공통 자원을 공유한다.
+
+--- 
+
+## 2.4 확인 실습  Non-CDB의 Instance와 Database
+
+<img width="720" height="281" alt="image" src="https://github.com/user-attachments/assets/c73e429d-2433-402a-afc4-ed42064c80ea" />
+
+```sql
+SQL> SELECT name, cdb, open_mode FROM v$database;
+NAME CDB OPEN_MODE
+ORCL NO  READ WRITE
+
+SQL> SELECT instance_name, status FROM v$instance;
+INSTANCE_NAME STATUS
+ORCL          OPEN
+
+SQL> SELECT sys_context('USERENV','DB_NAME') AS db_name FROM dual;
+DB_NAME
+--------------------
+orcl
+
+SQL> EXIT
+```
+
+> **Instance와 Database는 서로 다른 개념이다.**
+>
+> - Instance : Memory + Process로 구성된 실행 영역
+> - Database : Disk에 저장되는 영구 파일 영역
+>
+> 실습에서는 이해하기 쉽게 Instance 이름과 Database 이름을 모두 `ORCL`로 사용하지만, 두 이름이 반드시 같아야 하는 것은 아니다.
