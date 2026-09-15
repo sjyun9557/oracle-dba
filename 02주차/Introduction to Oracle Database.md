@@ -3,14 +3,14 @@
 <img width="744" height="416" alt="image" src="https://github.com/user-attachments/assets/9dedb641-4fea-43e6-9ceb-11390813f9ba" />
 
 
-**Instance는 실행 중인 작업 환경** 
+- **Instance는 실행 중인 작업 환경** 
 
 Instance가 시작되면 Oracle은 공유 Memory 영역인 SGA(System Global Area)를 할당하고 Background Process를 시작
 
 Instance = SGA + Background Processes
 
 
-**Database는 디스크에 저장되는 파일 집합**
+- **Database는 디스크에 저장되는 파일 집합**
 
 Database는 업무 데이터와 Oracle의 관리 정보를 영구 저장하는 물리 파일들의 집합
 
