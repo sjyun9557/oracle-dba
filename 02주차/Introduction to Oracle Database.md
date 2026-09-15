@@ -85,7 +85,7 @@ CDB와 PDB를 관리하기 위한 Oracle의 공통 관리 정보를 가지고 �
 
 --- 
 
-## 4. 확인 실습  Non-CDB의 Instance와 Database
+## 3. 확인 실습  Non-CDB의 Instance와 Database
 
 <br>
 
