@@ -22,7 +22,7 @@
 
 Oracle 19c에서는 **Multitenant Architecture**를 사용할 수 있다.
 
-Multitenant Architecture는 하나의 **CDB(Container Database)** 안에 여러 개의 **PDB(Pluggable Database)**를 수용하는 구조이다.
+Multitenant Architecture는 하나의 **CDB(Container Database)** 안에 여러 개의 PDB(Pluggable Database)를 수용하는 구조이다.
 
 ```text
 CDB (Container Database)
