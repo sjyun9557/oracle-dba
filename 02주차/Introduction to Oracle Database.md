@@ -2,6 +2,7 @@
 
 <img width="744" height="416" alt="image" src="https://github.com/user-attachments/assets/9dedb641-4fea-43e6-9ceb-11390813f9ba" />
 
+<br>
 
 - **Instance는 실행 중인 작업 환경** 
 
@@ -24,6 +25,8 @@ Oracle 19c에서는 **Multitenant Architecture**를 사용할 수 있다.
 
 Multitenant Architecture는 하나의 **CDB(Container Database)** 안에 여러 개의 PDB(Pluggable Database)를 수용하는 구조이다.
 
+<br>
+
 ```text
 CDB (Container Database)
 │
@@ -35,6 +38,7 @@ CDB (Container Database)
 │
 └── HR PDB
 ```
+<br>
 
 ### CDB (Container Database)
 
@@ -60,6 +64,7 @@ CDB와 PDB를 관리하기 위한 Oracle의 공통 관리 정보를 가지고 �
 
 예를 들어 `SALES PDB`, `HR PDB` 등을 만들 수 있으며 각각의 PDB에 Schema, Table 등의 업무 데이터를 저장할 수 있다.
 
+<br>
 
 ```text
              Instance
@@ -75,6 +80,7 @@ CDB와 PDB를 관리하기 위한 Oracle의 공통 관리 정보를 가지고 �
                            └─ HR
 ```
 
+<br>
 
 여러 PDB가 하나의 CDB 안에서 동작하지만, 각각의 PDB는 사용자 입장에서는 **독립된 Database처럼 사용할 수 있다.**
 
@@ -86,6 +92,8 @@ CDB와 PDB를 관리하기 위한 Oracle의 공통 관리 정보를 가지고 �
 ## 2.4 확인 실습  Non-CDB의 Instance와 Database
 
 <img width="720" height="281" alt="image" src="https://github.com/user-attachments/assets/c73e429d-2433-402a-afc4-ed42064c80ea" />
+
+<br>
 
 ```sql
 SQL> SELECT name, cdb, open_mode FROM v$database;
@@ -103,6 +111,8 @@ orcl
 
 SQL> EXIT
 ```
+
+<br>
 
 > **Instance와 Database는 서로 다른 개념이다.**
 >
