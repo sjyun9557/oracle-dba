@@ -20,11 +20,7 @@ User · Schema : User는 인증과 권한의 주체, Schema는 그 User가 소�
 
 ### 1.2 Instance 영역과 Database 영역
 
-Oracle의 구조 = **Instance 영역**과 **Database 영역**
-
-Instance 영역 = 메모리 영역
-
-Database 영역 = 데이터 저장 공간
+Oracle의 구조 = **Instance 영역(메모리 영역)**과 **Database 영역(데이터 저장 공간)**
 
 -> 처리 과정
 
@@ -58,13 +54,17 @@ Memory 사용    Database(Disk)에서
 ### 1.3 Database를 구성하는 주요 파일
 
 Datafile :Table과 Index 같은 Data Structure를 Oracle 고유 형식으로 저장하는 물리 파일
-Tempfile : Temporary Tablespace에 속하는 파일입니다.	
+
+Tempfile : Temporary Tablespace에 속하는 파일
+
 Control File : Database 이름, Datafile과 Redo Log의 위치, Checkpoint 정보 등 Database의 물리 구조를 기록하는 Binary File
+
 Online Redo Log	Database : 변경 기록을 보관
 
 ### 1.4 여러 Database를 운영한다는 의미
 
 하나의 Host에서는 **하나의 Oracle Software를 이용하여 여러 Database를 운영할 수 있다.**
+
 Database가 여러 개라고 해서 Oracle Software를 Database 수만큼 설치할 필요는 없다.
 
 ```text
