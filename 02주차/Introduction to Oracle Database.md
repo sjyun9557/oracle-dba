@@ -2,7 +2,7 @@
 
 <img width="744" height="416" alt="image" src="https://github.com/user-attachments/assets/9dedb641-4fea-43e6-9ceb-11390813f9ba" />
 
-<br>
+---
 
 - **Instance는 실행 중인 작업 환경** 
 
@@ -15,9 +15,7 @@
 
   Database는 업무 데이터와 Oracle의 관리 정보를 영구 저장하는 물리 파일들의 집합
 
-
 ---
-
 
 ## 2.2 Oracle Multitenant Container Database
 
@@ -91,7 +89,11 @@ CDB와 PDB를 관리하기 위한 Oracle의 공통 관리 정보를 가지고 �
 
 ## 2.4 확인 실습  Non-CDB의 Instance와 Database
 
+<br>
+
 <img width="720" height="281" alt="image" src="https://github.com/user-attachments/assets/c73e429d-2433-402a-afc4-ed42064c80ea" />
+
+<br>
 
 <br>
 
