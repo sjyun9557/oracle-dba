@@ -37,7 +37,6 @@ CDB (Container Database)
 └── HR PDB
 ```
 <br>
-
 ### CDB (Container Database)
 
 여러 Container를 포함하는 전체 Database이다.
@@ -79,7 +78,6 @@ CDB와 PDB를 관리하기 위한 Oracle의 공통 관리 정보를 가지고 �
 ```
 
 <br>
-
 여러 PDB가 하나의 CDB 안에서 동작하지만, 각각의 PDB는 사용자 입장에서는 **독립된 Database처럼 사용할 수 있다.**
 
 > PDB마다 별도의 Instance가 존재하는 것은 아니다.  
